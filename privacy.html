@@ -10,6 +10,7 @@
   main{background:#fff;border-radius:16px;padding:1.5rem;box-shadow:0 2px 10px rgba(55,89,135,.1)}
   hr{border:0;border-top:1px solid #DCE5F1;margin:3rem 0}
   strong{color:#4C8DF6}
+  ul{padding-left:1.2rem}li{margin:.3rem 0}
   .updated{color:#7B8799;font-size:.9rem}
 </style>
 </head>
@@ -17,57 +18,97 @@
 <main>
 
 <h1>챙기미 개인정보 처리방침</h1>
-<p class="updated">시행일 2026년 8월 15일</p>
+<p class="updated">시행일 2026년 8월 19일</p>
 
-<p><strong>챙기미는 어떤 개인정보도 수집하지 않습니다.</strong></p>
+<p><strong>혼자 쓰면 아무것도 서버로 보내지 않습니다.</strong> 챙기미는 로그인 없이 열리고, 그 상태에서는 모든 내용이 기기 안에만 남습니다. <strong>[같이 챙기기]를 누른 사람에게만</strong> 계정이 생기고, 그때부터 아래 내용이 서버에 저장됩니다.</p>
 
-<h2>수집하는 정보</h2>
-<p>없습니다. 챙기미는 계정이나 로그인이 없고, 이름·이메일·전화번호·위치·연락처·사진을 요구하지 않습니다.</p>
+<h2>1. 혼자 쓸 때</h2>
+<p>준비물 체크, 함께 가는 사람 이름, 담당자, 메모, 출발 날짜, 목록에서 뺀 물건이 <strong>기기 안에만</strong> 저장됩니다. 계정을 만들지 않고, 네트워크로 아무것도 보내지 않습니다. 앱을 지우면 함께 사라집니다.</p>
 
-<h2>저장되는 정보</h2>
-<p>앱에서 입력한 내용(준비물 체크, 함께 가는 사람 이름, 담당자, 메모, 출발 날짜, 목록에서 뺀 물건)은 <strong>사용자의 기기 안에만</strong> 저장됩니다. 앱을 삭제하면 함께 사라집니다.</p>
+<h2>2. 같이 챙길 때 서버에 저장되는 것</h2>
+<ul>
+  <li><strong>이름</strong> — 직접 입력한 표시용 이름입니다. 실명일 필요가 없습니다.</li>
+  <li><strong>여행 정보</strong> — 목적지 국가, 출발 날짜·시각, 준비물 체크 여부와 체크한 사람, 담당자 지정, 직접 추가하거나 목록에서 뺀 물건</li>
+  <li><strong>메모(코멘트) 내용</strong>과 그것을 쓴 사람의 이름</li>
+  <li><strong>계정 식별자와 인증 토큰</strong> — 기기가 자기 계정임을 증명하는 데만 씁니다</li>
+</ul>
+<p>이메일·전화번호·비밀번호·위치·연락처·사진·결제 정보는 <strong>요구하지도 저장하지도 않습니다.</strong> 카메라·위치·연락처·마이크 권한을 하나도 요청하지 않습니다.</p>
 
-<h2>전송·공유</h2>
-<p>챙기미는 인터넷에 아무것도 보내지 않습니다. 서버가 없고, 앱 어디에도 네트워크 요청 코드가 없습니다. 따라서 제3자에게 제공하거나 판매하는 정보도 없습니다.</p>
+<h2>3. 왜 저장하나요</h2>
+<p>같은 여행에 참여한 사람들이 같은 준비물 목록을 보고, 누가 무엇을 챙기는지 나누기 위해서입니다. 이 목적 밖으로는 쓰지 않습니다.</p>
 
-<h2>광고와 분석</h2>
-<p>광고 SDK와 분석 도구를 사용하지 않습니다. 사용자를 추적하지 않습니다.</p>
+<h2>4. 누구에게 보이나요</h2>
+<p>같은 초대 링크로 <strong>그 여행에 참여한 사람에게만</strong> 보입니다. 이름, 체크한 사람 표시, 메모 내용이 서로에게 보입니다. 링크를 모르는 사람에게는 보이지 않으며, 검색되거나 공개되지 않습니다. 링크를 누구에게 보낼지는 사용자가 정합니다.</p>
+<p>제3자에게 제공하거나 판매하지 않습니다. 다만 서버 운영을 위해 <strong>Supabase Inc.</strong>에 데이터 보관을 위탁하며, 저장 위치는 <strong>Amazon Web Services 서울 리전(ap-northeast-2)</strong>입니다. 국외로 이전하지 않습니다.</p>
 
-<h2>어린이</h2>
-<p>수집하는 정보가 없으므로 만 14세 미만 아동의 정보도 수집하지 않습니다.</p>
+<h2>5. 얼마나 두나요 · 어떻게 지우나요</h2>
+<ul>
+  <li>앱 안에서 <strong>계정 삭제</strong>를 누르면 계정과 내가 만든 여행, 참여 기록, 메모가 <strong>즉시 함께 삭제</strong>됩니다. 되돌릴 수 없습니다.</li>
+  <li>여행은 한 사람당 하나입니다. 새 여행을 만들면 <strong>이전 여행은 서버에서 삭제</strong>됩니다.</li>
+  <li>앱만 지우면 기기 안의 내용은 사라지지만 서버 기록은 남습니다. 완전히 지우려면 앱을 지우기 전에 계정 삭제를 눌러 주세요.</li>
+</ul>
 
-<h2>변경</h2>
+<h2>6. 광고와 분석</h2>
+<p>광고 SDK와 분석 도구를 쓰지 않습니다. 사용자를 추적하지 않고, 광고 식별자를 수집하지 않습니다.</p>
+
+<h2>7. 어린이</h2>
+<p>만 14세 미만 아동을 대상으로 하지 않으며, 아동의 정보를 의도적으로 수집하지 않습니다. 아동의 정보가 저장된 것을 알게 되면 지웁니다.</p>
+
+<h2>8. 이용자의 권리</h2>
+<p>저장된 내용의 열람·수정·삭제를 원하시면 앱 안에서 직접 하시거나 아래 주소로 알려 주세요. 부적절한 메모를 발견한 경우에도 같은 주소로 신고해 주시면 확인 후 조치합니다.</p>
+
+<h2>9. 변경</h2>
 <p>이 방침이 바뀌면 이 페이지에서 시행일과 함께 알립니다.</p>
 
-<h2>문의</h2>
+<h2>10. 문의</h2>
 <p>lodimsign@gmail.com</p>
 
 <hr>
 
 <h1>Chaenggimi Privacy Policy</h1>
-<p class="updated">Effective 15 August 2026</p>
+<p class="updated">Effective 19 August 2026</p>
 
-<p><strong>Chaenggimi collects no personal data.</strong></p>
+<p><strong>Used alone, Chaenggimi sends nothing to a server.</strong> The app opens without a sign-in, and in that mode everything stays on your device. An account is created <strong>only when you tap [Pack together]</strong>, and only from that point is the data below stored on a server.</p>
 
-<h2>Information we collect</h2>
-<p>None. Chaenggimi has no accounts and no sign-in, and never asks for your name, email, phone number, location, contacts or photos.</p>
+<h2>1. Using it alone</h2>
+<p>Checked items, travel partner names, item owners, notes, departure date and hidden items are stored <strong>only on your device</strong>. No account is created and nothing is sent over the network. Deleting the app deletes it all.</p>
 
-<h2>Information stored</h2>
-<p>Whatever you enter in the app — checked items, travel partner names, item owners, notes, departure date and hidden items — is stored <strong>only on your device</strong>. Deleting the app deletes it all.</p>
+<h2>2. What is stored when you pack together</h2>
+<ul>
+  <li><strong>Your display name</strong> — typed by you. It does not need to be your real name.</li>
+  <li><strong>Trip data</strong> — destination country, departure date and time, which items are checked and by whom, item owners, and items you added or hid</li>
+  <li><strong>Note (comment) text</strong> and the name of whoever wrote it</li>
+  <li><strong>An account identifier and token</strong>, used only so your device can prove it owns the account</li>
+</ul>
+<p>We never ask for or store email, phone number, password, location, contacts, photos or payment details. The app requests no camera, location, contacts or microphone permission.</p>
 
-<h2>Transmission and sharing</h2>
-<p>Chaenggimi sends nothing over the internet. There is no server, and the app contains no network request code. Nothing is shared with or sold to third parties.</p>
+<h2>3. Why we store it</h2>
+<p>So that everyone on the same trip sees the same packing list and can split who brings what. We do not use it for anything else.</p>
 
-<h2>Advertising and analytics</h2>
-<p>No advertising SDKs and no analytics tools. You are not tracked.</p>
+<h2>4. Who can see it</h2>
+<p>Only people who <strong>joined that trip through the same invite link</strong>. They see each other's names, who checked an item, and the notes. Anyone without the link sees nothing; the list is not searchable or public. You decide who receives the link.</p>
+<p>We do not sell or share data with third parties. Storage is handled on our behalf by <strong>Supabase Inc.</strong> on <strong>Amazon Web Services, Seoul region (ap-northeast-2)</strong>. Data is not transferred out of that region.</p>
 
-<h2>Children</h2>
-<p>Because we collect nothing, we collect nothing from children either.</p>
+<h2>5. Retention and deletion</h2>
+<ul>
+  <li>Tapping <strong>Delete account</strong> in the app immediately deletes your account together with the trip you created, your membership and your notes. This cannot be undone.</li>
+  <li>Each person has one trip. Creating a new trip <strong>deletes the previous one</strong> from the server.</li>
+  <li>Deleting the app removes on-device data but leaves the server record. To remove everything, delete your account before deleting the app.</li>
+</ul>
 
-<h2>Changes</h2>
+<h2>6. Advertising and analytics</h2>
+<p>No advertising SDKs and no analytics tools. You are not tracked and no advertising identifier is collected.</p>
+
+<h2>7. Children</h2>
+<p>The app is not directed at children under 14 and we do not knowingly collect their data. If we learn that we have, we delete it.</p>
+
+<h2>8. Your rights</h2>
+<p>To view, correct or delete your data, use the app or write to the address below. Please report any inappropriate note to the same address and we will review and act on it.</p>
+
+<h2>9. Changes</h2>
 <p>Any change to this policy will be posted here with a new effective date.</p>
 
-<h2>Contact</h2>
+<h2>10. Contact</h2>
 <p>lodimsign@gmail.com</p>
 
 </main>
